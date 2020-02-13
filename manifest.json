@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "QR Me",
+    "version": "0.1",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "css": ["style.css"],
+            "match_about_blank": false
+        }
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"],
+        "css": ["style.css"]
+    }
+}
