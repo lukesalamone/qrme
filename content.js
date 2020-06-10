@@ -1,6 +1,3 @@
-
-console.log('hi')
-
 var qrmeFrameId = 'qrme-frame';
 var url = window.location.href;
 
